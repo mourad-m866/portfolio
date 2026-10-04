@@ -1,0 +1,17 @@
+{
+  "name": "tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "//comment": "Commande pour démarrer le serveur de développement local avec rechargement automatique",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

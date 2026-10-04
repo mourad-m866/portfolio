@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f4ed">
+  <meta name="description" content="بورتفوليو نور أحمد، مطورة واجهات رقمية تصنع تجارب ويب واضحة وممتعة.">
+  <title>نور أحمد | مطورة واجهات رقمية</title>
+  <!-- تحميل خطوط عربية ولاتينية متناسقة، مع بدائل محلية عند انقطاع الإنترنت. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- رأس الصفحة: تنقل واضح وزر قائمة مخصص للشاشات الصغيرة. -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="نور أحمد، إلى أعلى الصفحة">
+      <span class="brand-mark" aria-hidden="true">ن</span>
+      <span>نور أحمد<span class="brand-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="main-navigation">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-navigation" id="main-navigation" aria-label="التنقل الرئيسي">
+      <a href="#work">أعمالي</a>
+      <a href="#about">من أنا</a>
+      <a href="#contact">تواصل معي</a>
+    </nav>
+    <a class="header-cta" href="mailto:hello@example.com">لديك مشروع؟ <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main><!-- قسم الترحيب الرئيسي (Hero Section) -->
+<section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">مطور واجهات ومواقع إلكترونية</span>
+      <h1 class="hero-title">مرحباً، أنا <span class="highlight">مطور ويب</span> أحيي الأفكار عبر أسطر الكود.</h1>
+      <p class="hero-description">
+        متخصص في بناء وتطوير تطبيقات ومواقع الويب الحديثة، السريعة، والمتجاوبة مع كافة الشاشات باستخدام أحدث التقنيات مثل React, Next.js, و Tailwind CSS.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">عرض أعمالي ↙</a>
+        <a href="#contact" class="btn btn-secondary">تواصل معي</a>
+        <!-- رابط السيرة الذاتية (ضع ملف الـ CV داخل مجلد assets أو root) -->
+        <a href="cv.pdf" download class="btn btn-outline">تحميل السيرة الذاتية 📄</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- قسم المهارات والتقنيات (Skills Section) -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>المهارات والتقنيات</h2>
+      <p>الأدوات واللغات التي أستخدمها لبناء حلول برمجية متكاملة</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- الواجهات الأمامية Frontend -->
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>تطوير الواجهات (Frontend)</h3>
+        <ul class="skill-list">
+          <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
+          <li>React.js / Next.js</li>
+          <li>Tailwind CSS / Bootstrap</li>
+        </ul>
+      </div>
+
+      <!-- الخلفية وقواعد البيانات Backend -->
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <h3>الأنظمة الخلفية (Backend)</h3>
+        <ul class="skill-list">
+          <li>Node.js / Express</li>
+          <li>PHP / Laravel</li>
+          <li>Sanity / Firebase / REST APIs</li>
+        </ul>
+      </div>
+
+      <!-- الأدوات والتطوير Tools -->
+      <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <h3>الأدوات والمنصات (Tools)</h3>
+        <ul class="skill-list">
+          <li>Git / GitHub</li>
+          <li>VS Code / Vercel</li>
+          <li>npm / Composer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- الواجهة الرئيسية: تعريف سريع وصورة شخصية فعلية. -->
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> متاحة لمشاريع جديدة</p>
+        <h1 id="hero-title">أحوّل الأفكار<br>إلى <span class="headline-highlight">تجارب رقمية</span><br>تستحق أن تُعاش.</h1>
+        <p class="hero-description">أنا نور، مطورة واجهات أمامية أحب التفاصيل الصغيرة، وأبني مواقع سريعة وسهلة الاستخدام تترك انطباعًا جميلًا.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">شاهدي أعمالي <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="mailto:hello@example.com">لنتحدث عن فكرتك <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>مقيمة في عمّان، الأردن</span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span>أعمل مع الجميع، من أي مكان</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait-frame">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="صورة شخصية لمصممة ومطورة واجهات" fetchpriority="high">
+          <div class="portrait-caption"><span>أصنع أشياء جميلة</span><span aria-hidden="true">✳</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon" aria-hidden="true">✳</span><span>فكرة واضحة<br>وتنفيذ متقن</span></div>
+        <div class="floating-note note-bottom"><span class="note-number">05</span><span>سنوات من<br>التجربة الرقمية</span></div>
+        <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+        <span class="hero-sparkle sparkle-two" aria-hidden="true">✦</span>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="انتقلي إلى المشاريع"><span></span> مرّري للأسفل</a>
+    </section>
+
+    <!-- شريط مهارات مختصر يعرّف بمجالات العمل. -->
+    <section class="skills-band" aria-label="مجالات العمل">
+      <div class="skills-track">
+        <span>واجهات أمامية</span><i aria-hidden="true">✳</i><span>تصميم متجاوب</span><i aria-hidden="true">✳</i><span>تجربة المستخدم</span><i aria-hidden="true">✳</i><span>تطوير الويب</span><i aria-hidden="true">✳</i><span>واجهات أمامية</span><i aria-hidden="true">✳</i><span>تصميم متجاوب</span>
+      </div>
+    </section>
+
+    <!-- معرض المشاريع: أزرار التصنيف تتحكم بظهور البطاقات عبر JavaScript. -->
+    <section class="work-section page-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow section-kicker">مختارات من أعمالي <span>01 / 04</span></p>
+          <h2 id="work-title">مشاريع صُنعت <span>بعناية.</span></h2>
+        </div>
+        <div class="filter-list" role="group" aria-label="تصفية المشاريع">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">الكل</button>
+          <button class="filter-button" type="button" data-filter="web" aria-pressed="false">مواقع</button>
+          <button class="filter-button" type="button" data-filter="app" aria-pressed="false">تطبيقات</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <!-- المشروع الثاني: برنامج إدارة المبيعات والمحاسبة -->
+<article class="project-card reveal" data-category="app">
+  <a class="project-image image-olive" href="#" target="_blank" rel="noopener noreferrer" aria-label="معاينة تطبيق المحاسبة">
+    <img src="images/news.png" alt="تطبيق المحاسبة والمبيعات" loading="lazy">
+    <span class="project-open" aria-hidden="true">↗</span>
+    <span class="project-image-label">تطبيق إداري</span>
+  </a>
+  <div class="project-info">
+    <div>
+      <h3>برنامج إدارة المبيعات والمحاسبة</h3>
+      <p class="project-tags">Laravel • PHP • MySQL • JS</p>
+    </div>
+    <span class="project-year">2025</span>
+  </div>
+</article>
+        <!-- المشروع الجديد: ماركيتبلايس للحيوانات -->
+        <!-- المشروع الجديد: ماركيتبلايس للحيوانات -->
+<article class="project-card project-wide reveal" data-category="web">
+  <a class="project-image image-olive" href="https://hayawanati-app.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع ماركيتبلايس للحيوانات">
+    <img src="images/news.png" alt="ماركيتبلايس للحيوانات" loading="lazy">
+    <span class="project-open" aria-hidden="true">↗</span>
+    <span class="project-image-label">موقع إخباري وتجاري</span>
+  </a>
+  <div class="project-info">
+    <div>
+      <h3>ماركيتبلايس للحيوانات</h3>
+      <p class="project-tags">Next.js • Tailwind CSS • Sanity</p>
+    </div>
+    <span class="project-year">2026</span>
+  </div>
+</article>
+
+        <!-- مشروع 2: بوابة إخبارية محلية -->
+<article class="project-card reveal" data-category="web">
+  <a class="project-image image-olive" href="https://akhbar-fes.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع أخبار فاس">
+   <img src="images/fes-news.png" alt="موقع أخبار فاس" loading="lazy">
+    <span class="project-open" aria-hidden="true">↗</span>
+    <span class="project-image-label">منصة إخبارية</span>
+  </a>
+  <div class="project-info">
+    <div>
+      <h3>أخبار فاس - بوابة إخبارية محلية</h3>
+      <p class="project-tags">Next.js • Sanity Studio • Vercel</p>
+    </div>
+    <span class="project-year">2026</span>
+  </div>
+</article>
+
+        <!-- مشروع 3: خطوة -->
+        <article class="project-card reveal" data-category="app">
+          <a class="project-image image-peach" href="mailto:hello@example.com?subject=مشروع%20خطوة" aria-label="استفسري عن مشروع تطبيق خطوة">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85" alt="دفتر مفتوح وقهوة في مساحة هادئة" loading="lazy">
+            <span class="project-open" aria-hidden="true">↗</span>
+            <span class="project-image-label">تطبيق عادات</span>
+          </a>
+          <div class="project-info"><div><h3>خطوة، كل يوم أفضل</h3><p>تطبيق بسيط لبناء عادات تدوم</p></div><span class="project-year">2024</span></div>
+          <div class="project-tags"><span>تطبيق ويب</span><span>تجربة المستخدم</span></div>
+        </article>
+
+        <!-- مشروع 4: مدى -->
+        <article class="project-card reveal" data-category="web">
+          <a class="project-image image-blue" href="mailto:hello@example.com?subject=مشروع%20مدى" aria-label="استفسري عن مشروع مدى للاستوديو">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="استوديو عمل إبداعي بإضاءة طبيعية" loading="lazy">
+            <span class="project-open" aria-hidden="true">↗</span>
+            <span class="project-image-label">موقع تعريفي</span>
+          </a>
+          <div class="project-info"><div><h3>مدى، مساحة للإبداع</h3><p>موقع استوديو تصميم مستقل</p></div><span class="project-year">2024</span></div>
+          <div class="project-tags"><span>تصميم واجهات</span><span>تطوير ويب</span></div>
+        </article>
+      </div>
+      <p class="empty-projects" hidden>لا توجد مشاريع في هذا التصنيف حاليًا.</p>
+    </section>
+
+    <!-- نبذة شخصية ومهارات تقنية قابلة للاستبدال ببيانات صاحبة الموقع. -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-inner page-shell">
+        <div class="about-mark reveal" aria-hidden="true"><span>ن</span><i>✳</i><b>منذ ٢٠٢١</b></div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">قليلًا عني <span>02 / 03</span></p>
+          <h2 id="about-title">أؤمن أن الويب الأفضل يبدأ <span>بالإنصات.</span></h2>
+          <p>أعمل مع أصحاب الأفكار والفرق الصغيرة لأحوّل احتياجاتهم إلى تجارب رقمية عملية وجميلة. أحب الشيفرة النظيفة، التعاون الصريح، والقهوة التي تبرد لأنني اندمجت في حل مشكلة.</p>
+          <div class="toolkit"><span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>Figma</span><span>إتاحة الاستخدام</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- دعوة تواصل مباشرة بروابط لا تحتاج خادمًا خلفيًا. -->
+    <section class="contact-section page-shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-topline"><p class="eyebrow">هل نبدأ شيئًا جديدًا؟ <span>03 / 03</span></p><span class="contact-spark" aria-hidden="true">✳</span></div>
+      <h2 id="contact-title">لديك فكرة؟<br><span>أنا أستمع.</span></h2>
+      <div class="contact-bottom"><a class="button button-light" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a><p>عادةً ما أرد خلال يوم عمل واحد.</p></div>
+    </section>
+  </main>
+  <!-- قسم التواصل المباشر (Contact Section) --><!-- قسم التواصل المباشر (Contact Section) -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>تواصل معي</h2>
+      <p>هل لديك مشروع، فكرة، أو فرصة عمل؟ يسعدني جداً التواصل معك!</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <!-- معلومات الاتصال وروابط الشبكات -->
+      <div class="contact-info">
+        <h3>معلومات الاتصال</h3>
+        <p>لا تتردد في مراسلتي عبر البريد الإلكتروني أو التواصل معي مباشرة عبر المنصات التالية:</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>البريد الإلكتروني:</strong><br>
+              <a href="mailto:harbil.youssef@gmail.com">harbil.youssef@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>الموقع:</strong><br>
+              <span>فاس، المغرب</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/mourad-m866" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mourad-3alimdar-981164441" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://wa.me/212627060422" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+        </div>
+      </div>
+
+      <!-- نموذج إرسال الرسائل -->
+      <form class="contact-form" action="https://formspree.io/f/harbil.youssef@gmail.com" method="POST">
+        <div class="form-group">
+          <label for="name">الاسم الكامل</label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">الرسالة</label>
+          <textarea id="message" name="message" rows="5" placeholder="كيف يمكنني مساعدتك؟" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-secondary">إرسال الرسالة ✉️</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- تذييل الصفحة: حدّثي روابط الحسابات لتطابق ملفاتك الشخصية. -->
+  <footer class="site-footer page-shell">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">ن</span><span>نور أحمد<span class="brand-dot">.</span></span></a>
+    <p>مصنوع بعناية في عمّان <span aria-hidden="true">✳</span> <span id="current-year">2026</span></p>
+    <div class="social-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+  </footer>
+</body>
+</html>
+</html>
